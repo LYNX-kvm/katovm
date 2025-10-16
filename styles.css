@@ -1,3 +1,6 @@
+/* ==========================
+   Root Variables
+========================== */
 :root {
   --main-bg: #fbfffd;
   --sec-bg: #afd4ce;
@@ -6,6 +9,9 @@
   --focus-outline: #425f50;
 }
 
+/* ==========================
+   Global Reset & Base
+========================== */
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +51,9 @@ button:focus {
   outline-offset: 2px;
 }
 
+/* ==========================
+   Layout
+========================== */
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -53,15 +62,17 @@ button:focus {
 
 main {
   flex: 2;
-  padding: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
   padding: 3rem;
-  flex-direction: column;
 }
 
+/* ==========================
+   Typography
+========================== */
 h1 {
   font-size: 5vw;
   max-width: 90vw;
@@ -71,22 +82,24 @@ h2 {
   font-size: 3vw;
   max-width: 70vw;
 }
-p {
-  font-size: 1.8vw;
-  max-width: 90vw;
-}
+
+p,
 a {
   font-size: 1.8vw;
   max-width: 90vw;
 }
+
+/* ==========================
+   Navigation
+========================== */
 .nav-bar {
   display: flex;
   flex: 1;
-  gap: 3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
+  gap: 3rem;
   background: var(--sec-bg);
 }
 
@@ -106,20 +119,25 @@ a {
   max-width: 70vw;
   text-decoration: none;
 }
+
 .current-nav-location {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* ==========================
+   Footer
+========================== */
 .footer-container {
-  color: var(--text-color);
-  text-align: center;
-  padding: 1.25rem;
-  font-size: 0.9rem;
-  background-color: var(--sec-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1.25rem;
+  text-align: center;
+  background-color: var(--sec-bg);
+  color: var(--text-color);
+  font-size: 0.9rem;
 }
 
 .footer-container p {
@@ -128,33 +146,44 @@ a {
   max-width: 90vw;
 }
 
-
 .footer-links {
   margin-top: 10px;
 }
 
 .footer-links a img {
   height: 4vw;
+  max-height: 40px;
   margin: 1vw 2vw;
-  max-height: 40px; 
 }
 
+/* ==========================
+   Updates & Projects
+========================== */
 .update-container {
   margin: 1rem;
 }
-.main-updates{
+
+.main-updates {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.updates{
-  display:flex;
+.updates {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.projects-grid {
+  margin: 20px 0;
+}
+
+/* ==========================
+   Contact
+========================== */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -166,6 +195,12 @@ a {
   font-size: 1.8vw;
   max-width: 90vw;
 }
-.projects-grid {
-  margin: 20px 0;
+
+/* ==========================
+   Misc
+========================== */
+.LinkTree {
+  border: none;
+  padding: 1vh;
+  background-color: var(--sec-bg);
 }
