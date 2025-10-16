@@ -75,6 +75,10 @@ p {
   font-size: 1.8vw;
   max-width: 90vw;
 }
+a {
+  font-size: 1.8vw;
+  max-width: 90vw;
+}
 .nav-bar {
   display: flex;
   flex: 1;
@@ -112,38 +116,56 @@ p {
   padding: 1.25rem;
   font-size: 0.9rem;
   background-color: var(--sec-bg);
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .footer-container p {
-  margin-bottom: .5rem 0;
-    font-size: 1.4rem;
-
+  margin: 0.2rem 0;
+  font-size: 1.6vw;
+  max-width: 90vw;
 }
+
 
 .footer-links {
   margin-top: 10px;
 }
 
 .footer-links a img {
-  height: 2.4rem;
-  margin: 1rem 2rem;
+  height: 4vw;
+  margin: 1vw 2vw;
+  max-height: 40px; 
 }
+
 .update-container {
   margin: 1rem;
 }
-.contact-info{
+.main-updates{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.updates{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-info {
   display: flex;
   flex-direction: column;
 }
 
-.contact-info a{
+.contact-info a {
   text-decoration: none;
-  margin: .5rem 0;
-    font-size: 1.8vw;
+  margin: 0.5rem 0;
+  font-size: 1.8vw;
   max-width: 90vw;
-
+}
+.projects-grid {
+  margin: 20px 0;
 }
