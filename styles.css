@@ -186,10 +186,16 @@ a:hover {
   align-items: center;
   text-align: center;
 }
-.projects-grid {
-  margin: 2rem 0;
-}
 
+.projects-intro,
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  max-width: 90vw;
+  margin: 2rem 0;  width: 100%;
+}
 /* ==========================
    Contact
 ========================== */
