@@ -2,11 +2,19 @@
    Root Variables
 ========================== */
 :root {
-  --main-bg: #fbfffd;
-  --sec-bg: #afd4ce;
-  --text-color: #4c625e;
-  --primary-font: "Lexend", sans-serif;
-  --focus-outline: #425f50;
+  /* Colors */
+  --brand-bg-main: #fbfffd;
+  --brand-bg-accent: #afd4ce;
+  --brand-text: #4c625e;
+  --brand-focus: #425f50;
+
+  /* Font */
+  --brand-font: "Lexend", sans-serif;
+
+  /* Optional UI accents */
+  --brand-radius: 0.75rem;
+  --brand-transition: 0.25s ease;
+  --brand-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* ==========================
@@ -21,34 +29,26 @@
 html,
 body {
   height: 100%;
-  margin: 0;
-  background-color: var(--main-bg);
+  background-color: var(--brand-bg-main);
+  color: var(--brand-text);
+  font-family: var(--brand-font);
+  line-height: 1.6;
 }
 
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-span,
-li,
-button {
-  color: var(--text-color);
-  font-family: var(--primary-font);
+img,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
 li {
-  list-style-type: none;
+  list-style: none;
 }
 
 a:focus,
 button:focus {
-  outline: 2px solid var(--focus-outline);
-  outline-offset: 2px;
+  outline: 2px solid var(--brand-focus);
+  outline-offset: 3px;
 }
 
 /* ==========================
@@ -66,7 +66,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
   padding: 3rem;
 }
 
@@ -74,19 +73,34 @@ main {
    Typography
 ========================== */
 h1 {
-  font-size: 5vw;
+  font-size: clamp(2rem, 5vw, 4rem);
   max-width: 90vw;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   max-width: 70vw;
+  font-weight: 500;
 }
 
 p,
 a {
-  font-size: 1.8vw;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
   max-width: 90vw;
+  color: var(--brand-text);
+}
+
+/* ==========================
+   Links
+========================== */
+a {
+  text-decoration: none;
+  transition: color var(--brand-transition);
+}
+
+a:hover {
+  color: var(--brand-focus);
 }
 
 /* ==========================
@@ -98,11 +112,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  background: var(--brand-bg-accent);
   gap: 3rem;
-  background: var(--sec-bg);
 }
-
 .nav-links {
   display: flex;
   flex-direction: column;
@@ -112,12 +124,16 @@ a {
 
 .nav-links li {
   margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
 }
 
 .nav-links a {
   font-size: 3vw;
   max-width: 70vw;
   text-decoration: none;
+  border-radius: var(--brand-radius);
+  transition: background-color var(--brand-transition);
 }
 
 .current-nav-location {
@@ -125,19 +141,19 @@ a {
   text-underline-offset: 3px;
 }
 
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 /* ==========================
    Footer
 ========================== */
 .footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.25rem;
+  background-color: var(--brand-bg-accent);
+  color: var(--brand-text);
+  padding: 1.5rem;
   text-align: center;
-  background-color: var(--sec-bg);
-  color: var(--text-color);
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 1.6vw, 1.2rem);
 }
 
 .footer-container p {
@@ -147,7 +163,7 @@ a {
 }
 
 .footer-links {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .footer-links a img {
@@ -163,22 +179,15 @@ a {
   margin: 1rem;
 }
 
-.main-updates {
+.main-updates,
+.updates {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
-.updates {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .projects-grid {
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 
 /* ==========================
@@ -190,17 +199,26 @@ a {
 }
 
 .contact-info a {
-  text-decoration: none;
   margin: 0.5rem 0;
-  font-size: 1.8vw;
-  max-width: 90vw;
 }
 
 /* ==========================
    Misc
 ========================== */
+button,
 .LinkTree {
   border: none;
-  padding: 1vh;
-  background-color: var(--sec-bg);
+  padding: 1vh 2vh;
+  border-radius: var(--brand-radius);
+  background-color: var(--brand-bg-accent);
+  color: var(--brand-text);
+  font-family: var(--brand-font);
+  cursor: pointer;
+  transition: background-color var(--brand-transition),
+    transform var(--brand-transition);
+}
+
+button:hover,
+.LinkTree:hover {
+  transform: scale(1.03);
 }
