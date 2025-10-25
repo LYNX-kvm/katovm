@@ -199,7 +199,7 @@ a:hover {
   align-items: left;
   text-align: left;
   max-width: 90vw;
-  margin: 2rem 0; 
+  margin: 2rem 0;
   width: 100%;
 }
 /* ==========================
@@ -231,7 +231,8 @@ a:hover {
 ========================== */
 
 .resume button,
-.linktree button {
+.linktree button,
+button {
   border: none;
   padding: 1vh 2vh;
   border-radius: var(--brand-radius);
@@ -244,6 +245,7 @@ a:hover {
 }
 
 .resume button:hover,
-.linkTree button:hover{
+.linkTree button:hover,
+button:hover {
   transform: scale(1.03);
 }
