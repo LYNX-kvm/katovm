@@ -215,10 +215,23 @@ a:hover {
 }
 
 /* ==========================
+   About me
+========================== */
+.resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume a {
+  margin: 0.5rem 0;
+}
+
+/* ==========================
    Misc
 ========================== */
-button,
-.LinkTree {
+
+.resume button,
+.linktree button {
   border: none;
   padding: 1vh 2vh;
   border-radius: var(--brand-radius);
@@ -230,7 +243,7 @@ button,
     transform var(--brand-transition);
 }
 
-button:hover,
-.LinkTree:hover {
+.resume button:hover,
+.linkTree button:hover{
   transform: scale(1.03);
 }
