@@ -148,6 +148,55 @@ a:hover {
 .nav-links a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+/* ==========================
+   Mobile Navigation
+=========================== */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 2rem;
+    z-index: 999;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    overflow-x: auto; /* allows horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+  }
+  .nav-links::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  .nav-links li {
+    margin-bottom: 0;
+  }
+
+  .nav-links a {
+    font-size: clamp(0.8rem, 1.4vw, 1.2rem);
+    line-height: 0.1;
+    max-width: none;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 80px; /* push content below fixed nav */
+    padding: 2rem;
+  }
+}
 
 /* ==========================
    Footer
@@ -248,7 +297,7 @@ button {
 }
 
 .resume button:hover,
-.linkTree button:hover,
+.linktree button:hover,
 button:hover {
   transform: scale(1.03);
 }
