@@ -18,6 +18,15 @@
 }
 
 /* ==========================
+  Dark theme    
+========================== */
+.dark {
+  --brand-bg-main: #1c1f1e;
+  --brand-bg-accent: #3b4a46;
+  --brand-text: #e5ece9;
+  --brand-focus: #a8ded0;
+}
+/* ==========================
    Global Reset & Base
 ========================== */
 * {
@@ -165,7 +174,6 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
     gap: 2rem;
     z-index: 999;
   }
@@ -173,7 +181,9 @@ a:hover {
   .nav-links {
     display: flex;
     flex-direction: row;
-    gap: 0.8rem;
+    flex-wrap: nowrap;
+    margin: 1.3rem;
+    gap: 2rem;
     overflow-x: auto; /* allows horizontal scrolling */
     -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
     scrollbar-width: none; /* hide scrollbar in Firefox */
@@ -187,13 +197,13 @@ a:hover {
 
   .nav-links a {
     font-size: clamp(0.8rem, 1.4vw, 1.2rem);
-    line-height: 0.1;
+    line-height: 1;
     max-width: none;
   }
 
   main {
     margin-left: 0;
-    margin-top: 80px; /* push content below fixed nav */
+    margin-top: 100px; /* push content below fixed nav */
     padding: 2rem;
   }
 }
@@ -204,7 +214,6 @@ a:hover {
 .footer-container {
   z-index: 10;
   position: relative;
-  max-height: 20vh;
   background-color: var(--brand-bg-accent);
   color: var(--brand-text);
   padding: 1.5rem;
@@ -218,7 +227,8 @@ a:hover {
   width: 100%;
 }
 
-.footer-container p {
+.footer-container p,
+#theme-toggle {
   margin: 0.2rem 0;
   font-size: 1.3vw;
 }
@@ -296,8 +306,12 @@ button {
     transform var(--brand-transition);
 }
 
-.resume button:hover,
-.linktree button:hover,
+
 button:hover {
   transform: scale(1.03);
+}
+
+#theme-toggle {
+  margin: 0.2rem;
+  border: 2px solid var(--brand-focus);
 }
