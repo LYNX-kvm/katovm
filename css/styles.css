@@ -282,12 +282,31 @@ a:hover {
 .resume {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  flex-direction: column;
 }
 
-.resume a {
-  margin: 0.5rem 0;
+.resume button {
+  margin: 0 0.4rem;
+  margin-bottom: 2rem;
 }
-
+.about-me-text h2,
+h3,
+.resume h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: var(--brand-focus) 1px solid;
+}
+.about-me-text p {
+  margin: 10px 0;
+}
+.about-me-text li {
+  margin: 5px 0;
+  margin-left: 2rem;
+  list-style: circle;
+}
 /* ==========================
    Misc
 ========================== */
@@ -302,10 +321,10 @@ button {
   color: var(--brand-text);
   font-family: var(--brand-font);
   cursor: pointer;
-  transition: background-color var(--brand-transition),
+  transition:
+    background-color var(--brand-transition),
     transform var(--brand-transition);
 }
-
 
 button:hover {
   transform: scale(1.03);
