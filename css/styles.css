@@ -87,6 +87,7 @@ h1 {
   font-size: clamp(2rem, 5vw, 4rem);
   max-width: 90vw;
   font-weight: 600;
+  margin-bottom: 1rem;
   border-bottom: var(--brand-bottom-underline);
 }
 
@@ -240,6 +241,9 @@ a:hover {
   max-height: 40px;
   margin: 1vw 2vw;
 }
+.language-switcher{
+  border-bottom: var(--brand-bottom-underline);
+}
 
 /* ==========================
    Updates & Projects
@@ -247,7 +251,6 @@ a:hover {
 .update-container {
   margin: 1rem;
 }
-
 
 .projects-intro,
 .projects-grid {
