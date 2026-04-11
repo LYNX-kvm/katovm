@@ -1,26 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="page-home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <!-- Header placeholder -->
-  <div id="header"></div>
+  <body class="page-home">
+    <header id="header"></header>
 
-  <!-- Main content -->
-  <main>
-    <h2>Welcome to my portfolio!</h2>
-    <p>This is the homepage.</p>
-  </main>
+    <main>
+      <section class="hero">
+        <div class="home-main-intro">
+          <div class="terminal-wrap">
+            <p class="terminal">&gt; INITIALIZING PORTFOLIO SYSTEM...</p>
+            <p class="terminal">&gt; LOADING USER PROFILE...</p>
+            <p class="terminal">&gt; STATUS: READY</p>
+          </div>
 
-  <!-- Footer placeholder -->
-  <div id="footer"></div>
+          <h1>Kato Van Mulders</h1>
+          <div class="home-main-intro-underline"></div>
+          <h2>Student Applied Computer Science</h2>
+          <p>
+            Motivated Applied Computer Science student with experience in IT
+            support, customer service, and logistics. Familiar with Windows
+            installations, software configuration, and programming in Java,
+            Python, and web technologies. Curious, structured, and strong in
+            problem-solving.
+          </p>
+        </div>
 
-  <!-- JS file -->
-  <script src="main.js"></script>
-</body>
+        <div class="home-main-links">
+          <a class="btn home-main-links-projects" href="projects.html">
+            View Projects >
+          </a>
+          <a class="btn home-main-links-contact" href="contact.html">
+            Initiate Contact >
+          </a>
+        </div>
+      </section>
+
+      <section class="home-stats">
+        <div class="stat experience">
+          <h2>2</h2>
+          <p>Months real IT experience</p>
+        </div>
+        <div class="stat study">
+          <h2>1st</h2>
+          <p>study year</p>
+        </div>
+        <div class="stat languages">
+          <h2>3</h2>
+          <p>languages</p>
+        </div>
+      </section>
+
+      <section class="tech-stack">
+        <h2>>_ Primary Tech Stack</h2>
+        <div class="tech-stack_list">
+          <span>Java</span>
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>HTML & CSS</span>
+          <span>SQL</span>
+          <span>Power BI</span>
+          <span>Windows 10/11</span>
+          <span>Git</span>
+        </div>
+        <a class="btn home-tech-more" href="about.html">
+          View more >
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <footer id="footer"></footer>
+
+    <!-- JS file -->
+    <script src="main.js"></script>
+  </body>
 </html>

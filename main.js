@@ -1,33 +1,28 @@
 // main.js
 
 // Load header
-fetch('header.html')
+fetch('/header.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('header').innerHTML = data;
 
-    const bodyClass = document.body.className; // e.g., "page-home"
     const navLinks = document.querySelectorAll('#header nav a');
+    const currentPath = window.location.pathname.split('/').pop(); // get current page file
 
-    // Map logical page names to href
-    const pageMap = {
-      home: 'index.html',
-      about: 'about.html',
-      projects: 'projects.html',
-      contact: 'contact.html'
-    };
+    // First, remove any existing active classes
+    navLinks.forEach(link => link.classList.remove('active'));
 
-    const currentHref = pageMap[bodyClass.replace('page-', '')];
-
+    // Then, add active to the current page
     navLinks.forEach(link => {
-      if (link.getAttribute('href') === currentHref) {
+      const linkPath = link.getAttribute('href').split('/').pop();
+      if (linkPath === currentPath) {
         link.classList.add('active');
       }
     });
   });
 
 // Load footer
-fetch('footer.html')
+fetch('/footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer').innerHTML = data;
