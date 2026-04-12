@@ -15,12 +15,17 @@ main > *:first-child {
 }
 .box {
   background-color: var(--box-bg);
+  width: max;
+  border: var(--toned-green-border);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
 }
+
 .title-underline {
   height: 0.3rem;
   width: 14rem;
   background-color: var(--neon-green);
   box-shadow: var(--neon-green-shadow);
 }
-
-

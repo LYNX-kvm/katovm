@@ -1,12 +1,5 @@
 /* ========================= 6. HERO ========================= */
 
-.hero h1 {
-  color: var(--neon-green);
-}
-
-.hero h2 {
-  color: var(--neon-cyan);
-}
 
 .hero p {
   max-width: 800px;
@@ -133,14 +126,7 @@
 
 /* ========================= 9. TECH STACK ========================= */
 
-.tech-stack {
-  width: max;
-  border: var(--toned-green-border);
-  padding: var(--space-lg);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xl);
-}
+
 .tech-stack h2 {
   padding: 0;
   margin: 0;

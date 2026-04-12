@@ -4,7 +4,6 @@
 
 .terminal {
   color: var(--neutral-green);
-  text-transform: uppercase;
   line-height: var(--space-lg);
 }
 
