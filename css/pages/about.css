@@ -1,27 +1,72 @@
-h3 {
-  text-transform: uppercase;
+/* =========================
+   EXPERIENCE SECTION
+   ========================= */
+
+/* Layout */
+.experience article {
+  margin: var(--space-md) 0;
 }
 
-.about-page div {
+.experience .box {
+  gap: var(--space-md);
+  text-transform: uppercase;
+  transition: var(--transition-normal);
+}
+.experience .box:hover {
+  box-shadow: var(--neon-green-shadow);
+  border: var(--neon-green-border);
+}
+
+/* Header */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-md);
+}
+
+.job-title-group {
+  display: flex;
+  flex-direction: column;
   gap: var(--space-sm);
 }
 
+/* Titles */
 .experience h3 {
+  text-transform: uppercase;
+  margin: 0;
   color: var(--neon-green);
 }
-.experience h4 {
-  color: var(--neon-pink);
-}
-.experience span {
-  color: var(--neon-pink);
-  border: var(--neon-pink-border);
-}
-.experience span:hover {
-  box-shadow: var(--neon-pink-shadow);
+
+.experience .company {
+  color: var(--neon-cyan);
+  font-size: var(--space-lg);
 }
 
-span {
+/* Description */
+.experience p {
+  text-transform: capitalize;
+}
+
+/* Skills */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.skill-list span {
   padding: var(--space-md);
   font-size: var(--space-lg);
+  color: var(--neon-pink);
+  border: var(--toned-pink-border);
   transition: var(--transition-normal);
+  text-transform: capitalize;
 }
+
+.skill-list span:hover {
+  box-shadow: var(--neon-pink-shadow);
+  border: var(--neon-pink-border);
+}
+
+

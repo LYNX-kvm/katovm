@@ -1,6 +1,6 @@
 /* ========================= 5. HEADER ========================= */
 
-header {
+#header {
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -12,7 +12,7 @@ header {
   border-bottom: var(--neon-green-border);
 }
 
-header span{
+#header span {
   font-size: var(--space-lg);
 }
 
@@ -54,17 +54,13 @@ header span{
 
 .nav-link {
   display: inline-flex;
-  align-items: center;
-
-  height: 2.6rem;
-  padding-inline: var(--space-md);
+  padding: var(--space-md);
 
   border-radius: var(--space-2xs);
   border: 1px solid transparent;
 
   text-decoration: none;
   color: inherit;
-  font-weight: 500;
 
   transition: var(--transition-normal);
 }
