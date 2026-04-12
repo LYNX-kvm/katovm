@@ -23,3 +23,11 @@ fetch('/header.html')
 
 // Load footer 
 fetch('/footer.html') .then(res => res.text()) .then(data => { document.getElementById('footer').innerHTML = data; });
+
+function toggleMenu() {
+  const nav = document.getElementById("nav");
+  const btn = document.querySelector(".menu-toggle");
+
+  nav.classList.toggle("show");
+  btn.classList.toggle("active");
+}
