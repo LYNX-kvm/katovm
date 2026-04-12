@@ -138,6 +138,7 @@ main > *:first-child {
 header {
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
   padding: var(--space-md) var(--space-xl);
 
@@ -216,7 +217,37 @@ header {
   stroke: currentColor;
   fill: none;
 }
+/* HAMBURGER */
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background: var(--neon-green);
+  transition: var(--transition-fast);
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
 /* ========================= 6. HERO ========================= */
 
 .hero h1 {
@@ -484,6 +515,48 @@ footer {
 
   .home-stats {
     flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .header-right {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--panel-bg);
+    border-top: var(--neon-green-border);
+    z-index: 1000;
+
+    /* hidden state */
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+
+    transition:
+      max-height 0.3s ease,
+      opacity 0.2s ease,
+      transform 0.3s ease;
+  }
+
+  /* WHEN ACTIVE */
+  .header-right.show {
+    max-height: 300px; /* enough for all links */
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: center;
+    padding: var(--space-md);
   }
 }
 
