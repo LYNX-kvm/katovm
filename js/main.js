@@ -1,18 +1,14 @@
-// main.js
-
 // Load header
-fetch('/header.html')
+fetch('../components/header.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('header').innerHTML = data;
 
     const navLinks = document.querySelectorAll('#header nav a');
-    const currentPath = window.location.pathname.split('/').pop(); // get current page file
+    const currentPath = window.location.pathname.split('/').pop();
 
-    // First, remove any existing active classes
     navLinks.forEach(link => link.classList.remove('active'));
 
-    // Then, add active to the current page
     navLinks.forEach(link => {
       const linkPath = link.getAttribute('href').split('/').pop();
       if (linkPath === currentPath) {
@@ -21,8 +17,12 @@ fetch('/header.html')
     });
   });
 
-// Load footer 
-fetch('/footer.html') .then(res => res.text()) .then(data => { document.getElementById('footer').innerHTML = data; });
+// Load footer
+fetch('../components/footer.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('footer').innerHTML = data;
+  });
 
 function toggleMenu() {
   const nav = document.getElementById("nav");

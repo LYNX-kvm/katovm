@@ -1,0 +1,71 @@
+/* ========================= 1. VARIABLES ========================= */
+
+:root {
+  /* === Neon Colors === */
+  --neon-purple: #8338ec;
+  --neon-pink: #ff006e;
+  --neon-yellow: #ffbe0b;
+  --neon-green: #00ff9f;
+  --neon-cyan: #00d4ff;
+
+  --neutral-green: #049f6f;
+
+  /* Toned/Dark Variants */
+  --toned-purple: #17133e;
+  --toned-pink: #6d0946;
+  --toned-yellow: #544321;
+  --toned-green: #095950;
+  --toned-cyan: #074a6b;
+
+  /* Low-opacity / translucent */
+  --low-opacity-purple: rgb(131, 56, 236, 0.3);
+  --low-opacity-pink: rgb(255, 0, 110, 0.3);
+  --low-opacity-yellow: rgb(255, 190, 11, 0.3);
+  --low-opacity-green: rgb(0 255 159 / 0.3);
+  --low-opacity-cyan: rgb(0 212 255 / 0.3);
+
+  --soft-blue: #7d90ee;
+
+  /* === Backgrounds === */
+  --dark-bg: #0a0e27;
+  --panel-bg: #0f1535;
+
+  /* === Shadows === */
+  --neon-purple-shadow: 0 0 15px 5px var(--low-opacity-purple);
+  --neon-pink-shadow: 0 0 15px 5px var(--low-opacity-pink);
+  --neon-yellow-shadow: 0 0 15px 5px var(--low-opacity-yellow);
+  --neon-green-shadow: 0 0 15px 5px var(--low-opacity-green);
+  --neon-cyan-shadow: 0 0 15px 5px var(--low-opacity-cyan);
+
+  /* === Borders === */
+  /* Neon */
+  --neon-purple-border: 1px solid var(--neon-purple);
+  --neon-pink-border: 1px solid var(--neon-pink);
+  --neon-yellow-border: 1px solid var(--neon-yellow);
+  --neon-green-border: 1px solid var(--neon-green);
+  --neon-cyan-border: 1px solid var(--neon-cyan);
+
+  /* Toned */
+  --toned-purple-border: 1px solid var(--toned-purple);
+  --toned-pink-border: 1px solid var(--toned-pink);
+  --toned-yellow-border: 1px solid var(--toned-yellow);
+  --toned-green-border: 1px solid var(--toned-green);
+  --toned-cyan-border: 1px solid var(--toned-cyan);
+
+  --transparent-border: 1px solid transparent;
+
+  /* === Spacing === */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+  --space-4xl: 8rem;
+
+  /* === Transitions === */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
