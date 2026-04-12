@@ -21,6 +21,7 @@ main > *:first-child {
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
+  border-radius: var(--space-2xs);
 }
 
 .title-underline {

@@ -12,6 +12,10 @@ header {
   border-bottom: var(--neon-green-border);
 }
 
+header span{
+  font-size: var(--space-lg);
+}
+
 .header-left,
 .header-right {
   display: flex;

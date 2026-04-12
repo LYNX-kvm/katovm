@@ -1,0 +1,17 @@
+.btn {
+  padding: var(--space-sm) var(--space-xl);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--transition-normal);
+  background: var(--neon-green);
+  color: var(--dark-bg);
+  border: 1px solid transparent;
+  border-radius: var(--space-2xs);
+}
+
+.btn:hover {
+  background: var(--dark-bg);
+  color: var(--neon-green);
+  border: var(--neon-green-border);
+  box-shadow: var(--neon-green-shadow);
+}

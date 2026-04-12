@@ -1,0 +1,27 @@
+h3 {
+  text-transform: uppercase;
+}
+
+.about-page div {
+  gap: var(--space-sm);
+}
+
+.experience h3 {
+  color: var(--neon-green);
+}
+.experience h4 {
+  color: var(--neon-pink);
+}
+.experience span {
+  color: var(--neon-pink);
+  border: var(--neon-pink-border);
+}
+.experience span:hover {
+  box-shadow: var(--neon-pink-shadow);
+}
+
+span {
+  padding: var(--space-md);
+  font-size: var(--space-lg);
+  transition: var(--transition-normal);
+}

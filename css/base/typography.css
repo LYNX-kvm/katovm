@@ -20,6 +20,12 @@ h2 {
 h3 {
   font-size: clamp(1rem, 3.2vw, 2rem);
   margin: var(--space-md) 0;
+  color: var(--neon-cyan)
+}
+h4 {
+  font-size: clamp(1rem, 3.2vw, 2rem);
+  margin: var(--space-md) 0;
+  color: var(--neon-cyan)
 }
 p,
 .btn {

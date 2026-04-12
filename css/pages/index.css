@@ -1,17 +1,7 @@
 /* ========================= 6. HERO ========================= */
 
-
 .page-home .hero p {
   max-width: 800px;
-}
-
-.home-main-intro-underline {
-  width: 10rem;
-  height: 5px;
-  margin-bottom: var(--space-xl);
-
-  background-color: var(--neon-green);
-  box-shadow: var(--neon-green-shadow);
 }
 
 /* BUTTONS */
@@ -23,21 +13,13 @@
   margin: var(--space-xl) 0;
 }
 
-.home-main-links .btn {
-  padding: var(--space-sm) var(--space-xl);
-  text-transform: uppercase;
-  text-decoration: none;
-
-  transition: var(--transition-normal);
-}
-
-.home-main-links-contact {
+.btn + .home-main-links-contact {
   background: var(--dark-bg);
   color: var(--neon-cyan);
   border: var(--neon-cyan-border);
 }
 
-.home-main-links-contact:hover {
+.btn + .home-main-links-contact:hover {
   background: var(--neon-cyan);
   color: var(--dark-bg);
   box-shadow: var(--neon-cyan-shadow);
@@ -46,6 +28,7 @@
 .home-main-links-projects {
   background: var(--neon-green);
   color: var(--dark-bg);
+  border: 1px solid transparent;
 }
 
 .home-main-links-projects:hover {
@@ -92,17 +75,15 @@
 }
 
 /* Variants */
-.experience {
-  border: var(--toned-green-border);
-}
-.experience h2 {
+
+.home-page .experience h2 {
   color: var(--neon-green);
 }
-.experience:hover {
+.home-page .experience:hover {
   box-shadow: var(--neon-green-shadow);
   border: var(--neon-green-border);
 }
-.study {
+.box.study {
   border: var(--toned-cyan-border);
 }
 .study h2 {
@@ -113,7 +94,7 @@
   box-shadow: var(--neon-cyan-shadow);
 }
 
-.languages {
+.box.languages {
   border: var(--toned-pink-border);
 }
 .languages h2 {
@@ -126,10 +107,7 @@
 
 /* ========================= 9. TECH STACK ========================= */
 
-
 .tech-stack h2 {
-  padding: 0;
-  margin: 0;
   color: var(--neon-green);
 }
 
