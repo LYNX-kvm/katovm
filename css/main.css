@@ -7,5 +7,6 @@
 @import url("./components/footer.css");
 @import url("./components/header.css");
 
+@import url("./layout/layout.css");
 
 @import url("style.css");

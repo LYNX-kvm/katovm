@@ -1,18 +1,7 @@
 
 
 /* ========================= 4. LAYOUT ========================= */
-main {
-  flex: 1;
-  width: clamp(300px, 800px);
-  margin: 0 auto;
-  padding: var(--space-xl);
-}
-main section {
-  margin: var(--space-2xl) 0;
-}
-main > *:first-child {
-  margin-top: 0;
-}
+
 
 /* ========================= 8. TERMINAL ========================= */
 
