@@ -1,0 +1,115 @@
+/* ========================= 5. HEADER ========================= */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: var(--space-md) var(--space-xl);
+
+  background-color: var(--panel-bg);
+  color: var(--neon-green);
+  border-bottom: var(--neon-green-border);
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+.header-left a {
+  color: var(--neon-green);
+  text-decoration: none;
+}
+
+.header-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-xs) var(--space-lg);
+  border: 2px solid;
+  border-radius: var(--space-2xs);
+
+  font-size: var(--space-lg);
+  font-weight: 700;
+
+  transition: var(--transition-normal);
+}
+
+.header-icon:hover {
+  box-shadow: var(--neon-green-shadow);
+}
+
+.header-icon {
+  transform: translateY(-0.1rem) scaleX(0.6);
+}
+
+/* NAV */
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+
+  height: 2.6rem;
+  padding-inline: var(--space-md);
+
+  border-radius: var(--space-2xs);
+  border: 1px solid transparent;
+
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+
+  transition: var(--transition-normal);
+}
+
+.nav-link:hover {
+  border: var(--neon-green-border);
+  box-shadow: var(--neon-green-shadow);
+}
+
+.nav-link.active {
+  background-color: var(--neon-green);
+  color: var(--dark-bg);
+  box-shadow: var(--neon-green-shadow);
+}
+
+.nav-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  stroke: currentColor;
+  fill: none;
+}
+/* HAMBURGER */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background: var(--neon-green);
+  transition: var(--transition-fast);
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}

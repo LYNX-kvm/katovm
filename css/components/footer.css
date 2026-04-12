@@ -1,0 +1,36 @@
+/* ========================= 9. FOOTER ========================= */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-xl);
+
+  padding: var(--space-md) var(--space-3xl);
+
+  background-color: var(--panel-bg);
+  color: var(--neon-green);
+
+  border-top: var(--neon-green-border);
+}
+
+.footer-left {
+  color: var(--soft-blue);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  text-transform: lowercase;
+}
+
+/* STATUS */
+
+.status {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.status-dot {
+  animation: pulse 3s ease-in-out infinite;
+}

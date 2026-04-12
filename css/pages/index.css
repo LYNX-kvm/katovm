@@ -1,0 +1,185 @@
+/* ========================= 6. HERO ========================= */
+
+.hero h1 {
+  color: var(--neon-green);
+}
+
+.hero h2 {
+  color: var(--neon-cyan);
+}
+
+.hero p {
+  max-width: 800px;
+}
+
+.home-main-intro-underline {
+  width: 10rem;
+  height: 5px;
+  margin-bottom: var(--space-xl);
+
+  background-color: var(--neon-green);
+  box-shadow: var(--neon-green-shadow);
+}
+
+/* BUTTONS */
+
+.home-main-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
+}
+
+.home-main-links .btn {
+  padding: var(--space-sm) var(--space-xl);
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: var(--transition-normal);
+}
+
+.home-main-links-contact {
+  background: var(--dark-bg);
+  color: var(--neon-cyan);
+  border: var(--neon-cyan-border);
+}
+
+.home-main-links-contact:hover {
+  background: var(--neon-cyan);
+  color: var(--dark-bg);
+  box-shadow: var(--neon-cyan-shadow);
+}
+
+.home-main-links-projects {
+  background: var(--neon-green);
+  color: var(--dark-bg);
+}
+
+.home-main-links-projects:hover {
+  background: var(--dark-bg);
+  color: var(--neon-green);
+  border: var(--neon-green-border);
+  box-shadow: var(--neon-green-shadow);
+}
+
+/* ========================= 7. STATS ========================= */
+
+.home-stats {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+/* Card */
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+  max-width: 40rem;
+
+  padding: var(--space-lg);
+  gap: var(--space-sm);
+
+  text-align: center;
+  background-color: var(--panel-bg);
+
+  transition: var(--transition-normal);
+}
+
+/* Children */
+.stat h2 {
+  margin: 0;
+  text-transform: lowercase;
+}
+
+.stat p {
+  font-size: var(--space-md);
+  text-transform: uppercase;
+}
+
+/* Variants */
+.experience {
+  border: var(--toned-green-border);
+}
+.experience h2 {
+  color: var(--neon-green);
+}
+.experience:hover {
+  box-shadow: var(--neon-green-shadow);
+  border: var(--neon-green-border);
+}
+.study {
+  border: var(--toned-cyan-border);
+}
+.study h2 {
+  color: var(--neon-cyan);
+}
+.study:hover {
+  border: var(--neon-cyan-border);
+  box-shadow: var(--neon-cyan-shadow);
+}
+
+.languages {
+  border: var(--toned-pink-border);
+}
+.languages h2 {
+  color: var(--neon-pink);
+}
+.languages:hover {
+  box-shadow: var(--neon-pink-shadow);
+  border: var(--neon-pink-border);
+}
+
+/* ========================= 9. TECH STACK ========================= */
+
+.tech-stack {
+  width: max;
+  border: var(--toned-green-border);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+.tech-stack h2 {
+  padding: 0;
+  margin: 0;
+  font-size: var(--space-lg);
+  color: var(--neon-green);
+}
+
+.tech-stack_list {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--neon-cyan);
+  gap: var(--space-sm);
+}
+
+.tech-stack_list span {
+  padding: var(--space-md);
+  border: var(--toned-cyan-border);
+  font-size: var(--space-lg);
+  transition: var(--transition-normal);
+}
+
+.tech-stack_list span:hover {
+  box-shadow: var(--neon-cyan-shadow);
+  border: var(--neon-cyan-border);
+}
+
+.tech-stack .btn {
+  align-self: flex-end;
+  padding: var(--space-sm) var(--space-2xl);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--neon-green);
+  border: var(--neon-green-border);
+  transition: var(--transition-normal);
+}
+
+.tech-stack .btn:hover {
+  background: var(--neon-green);
+  color: var(--dark-bg);
+  box-shadow: var(--neon-green-shadow);
+}
