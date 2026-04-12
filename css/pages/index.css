@@ -83,7 +83,6 @@
   gap: var(--space-sm);
 
   text-align: center;
-  background-color: var(--panel-bg);
 
   transition: var(--transition-normal);
 }
@@ -145,12 +144,19 @@
 .tech-stack h2 {
   padding: 0;
   margin: 0;
-  font-size: var(--space-lg);
   color: var(--neon-green);
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allows spans to move below the H3 */
+  gap: var(--space-sm);
 }
 
 .tech-stack_list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   color: var(--neon-cyan);
   gap: var(--space-sm);

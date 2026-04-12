@@ -10,3 +10,15 @@ main section {
 main > *:first-child {
   margin-top: 0;
 }
+.box-content {
+  margin: 0 var(--space-md);
+}
+.box {
+  background-color: var(--box-bg);
+}
+.title-underline {
+  height: 0.3rem;
+  width: 14rem;
+  background-color: var(--neon-green);
+  box-shadow: var(--neon-green-shadow);
+}
