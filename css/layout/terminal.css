@@ -1,0 +1,14 @@
+.terminal-wrap {
+  margin: var(--space-xl) var(--space-xs);
+}
+
+.terminal {
+  color: var(--neutral-green);
+  text-transform: uppercase;
+  line-height: var(--space-lg);
+}
+
+.terminal-wrap p:last-of-type {
+  color: var(--neon-green);
+  animation: var(--pulse);
+}

@@ -32,5 +32,5 @@ footer {
 }
 
 .status-dot {
-  animation: pulse 3s ease-in-out infinite;
+  animation: var(--pulse);
 }
