@@ -1,32 +1,42 @@
+/* ========================= layout.css ========================= */
+
 main {
   flex: 1;
   width: clamp(300px, 90%, 1600px);
   margin: 0 auto;
   padding: var(--space-xl);
 }
+
 main section {
   margin: var(--space-2xl) 0;
 }
-main > *:first-child {
+
+/* Remove top margin from the first section, not h1 */
+main section:first-of-type {
   margin-top: 0;
 }
-.box-content {
-  margin: 0 var(--space-md);
-}
+
+/* Generic card box */
 .box {
   background-color: var(--box-bg);
-  width: max;
   border: var(--toned-green-border);
+  border-radius: var(--space-2xs);
   padding: var(--space-xl);
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
-  border-radius: var(--space-2xs);
 }
 
+/* Indented content inside a box */
+.box-content {
+  margin: 0 var(--space-md);
+}
+
+/* Page title accent bar */
 .title-underline {
   height: 0.3rem;
   width: 14rem;
   background-color: var(--neon-green);
   box-shadow: var(--neon-green-shadow);
+  margin-bottom: var(--space-lg);
 }

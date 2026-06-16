@@ -1,3 +1,5 @@
+/* ========================= variables.css ========================= */
+
 :root {
   /* === Neon Colors === */
   --neon-purple: #8338ec;
@@ -7,6 +9,7 @@
   --neon-cyan: #00d4ff;
 
   --neutral-green: #049f6f;
+  --soft-blue: #7d90ee;
 
   /* Toned/Dark Variants */
   --toned-purple: #17133e;
@@ -16,13 +19,11 @@
   --toned-cyan: #074a6b;
 
   /* Low-opacity / translucent */
-  --low-opacity-purple: rgb(131, 56, 236, 0.3);
-  --low-opacity-pink: rgb(255, 0, 110, 0.3);
-  --low-opacity-yellow: rgb(255, 190, 11, 0.3);
+  --low-opacity-purple: rgb(131 56 236 / 0.3);
+  --low-opacity-pink: rgb(255 0 110 / 0.3);
+  --low-opacity-yellow: rgb(255 190 11 / 0.3);
   --low-opacity-green: rgb(0 255 159 / 0.3);
   --low-opacity-cyan: rgb(0 212 255 / 0.3);
-
-  --soft-blue: #7d90ee;
 
   /* === Backgrounds === */
   --dark-bg: #0a0e27;
@@ -51,8 +52,6 @@
   --toned-green-border: 1px solid var(--toned-green);
   --toned-cyan-border: 1px solid var(--toned-cyan);
 
-  --transparent-border: 1px solid transparent;
-
   /* === Spacing === */
   --space-2xs: 0.25rem;
   --space-xs: 0.5rem;
@@ -64,11 +63,18 @@
   --space-3xl: 5rem;
   --space-4xl: 8rem;
 
+  /* === Font Sizes === */
+  /* Use these for font-size; use --space-* only for margin/padding/gap */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+
   /* === Transitions === */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
 
   /* === Animation === */
   --pulse: pulse 3s ease-in-out infinite;
-
 }

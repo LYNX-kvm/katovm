@@ -1,3 +1,51 @@
+/* ========================= about.css ========================= */
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+  margin-bottom: var(--space-4xl);
+}
+
+.hero .box {
+  width: 100%;
+  max-width: none;
+}
+
+.terminal {
+  color: var(--neon-green);
+  margin-bottom: var(--space-lg);
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.btn {
+  padding: 0.9rem 1.5rem;
+  text-decoration: none;
+  border: var(--neon-cyan-border);
+  color: var(--neon-cyan);
+  transition: var(--transition-normal);
+}
+
+.btn:hover {
+  box-shadow: var(--neon-cyan-shadow);
+}
+
+.btn-outline {
+  border: var(--neon-green-border);
+  color: var(--neon-green);
+}
+
+.btn-outline:hover {
+  box-shadow: var(--neon-green-shadow);
+}
+
 /* =========================
    EXPERIENCE SECTION
    ========================= */
@@ -9,7 +57,6 @@
 
 .experience .box {
   gap: var(--space-md);
-  text-transform: uppercase;
   transition: var(--transition-normal);
 }
 .experience .box:hover {
@@ -69,4 +116,176 @@
   border: var(--neon-pink-border);
 }
 
+/* =========================
+   EDUCATION
+   ========================= */
 
+.education {
+  margin-top: var(--space-4xl);
+}
+
+.education article {
+  margin-bottom: var(--space-md);
+}
+
+.education .box {
+  transition: var(--transition-normal);
+}
+
+.education .box:hover {
+  border: var(--neon-pink-border);
+  box-shadow: var(--neon-pink-shadow);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.degree-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.education h3 {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.school {
+  color: var(--neon-pink);
+}
+
+.school-meta {
+  margin-top: var(--space-sm);
+}
+
+.education-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+}
+
+.education-status.current {
+  border: var(--neon-green-border);
+  background-color: rgba(0, 255, 159, 0.08);
+  color: var(--neon-green);
+}
+
+.education-status.completed {
+  border: var(--neon-cyan-border);
+  background-color: rgba(0, 212, 255, 0.08);
+  color: var(--neon-cyan);
+}
+
+/* =========================
+   LANGUAGES
+   ========================= */
+
+.languages {
+  margin-top: var(--space-4xl);
+}
+
+.language {
+  border: var(--toned-yellow-border);
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  transition: var(--transition-normal);
+}
+
+.language:hover {
+  border: var(--neon-green-border);
+  box-shadow: var(--neon-green-shadow);
+}
+
+.language-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.language-header span:first-child {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--neon-green);
+  letter-spacing: 0.04em;
+}
+
+.language-header span:last-child {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: var(--toned-cyan-border);
+  background-color: rgba(0, 212, 255, 0.08);
+  color: var(--neon-cyan);
+  text-transform: uppercase;
+  font-size: var(--text-base);
+  letter-spacing: 0.08em;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.75rem;
+  border-radius: 999px;
+  background: var(--toned-cyan);
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-green), var(--neon-cyan));
+  transition: width var(--transition-normal);
+}
+
+/* =========================
+   SKILLS
+   ========================= */
+
+.skills {
+  margin-top: var(--space-4xl);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+.skills .box {
+  transition: var(--transition-normal);
+}
+
+.skills .box:hover {
+  border: var(--neon-purple-border);
+  box-shadow: var(--neon-purple-shadow);
+}
+
+.skills h3 {
+  margin-bottom: var(--space-lg);
+  color: var(--neon-purple);
+  text-transform: uppercase;
+}
+
+/* =========================
+   SECTION TITLES
+   ========================= */
+
+main section {
+  margin-bottom: var(--space-4xl);
+}
+
+main section h2 {
+  text-transform: uppercase;
+  margin-bottom: var(--space-xl);
+  letter-spacing: 2px;
+}

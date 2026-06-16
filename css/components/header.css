@@ -1,10 +1,12 @@
-/* ========================= 5. HEADER ========================= */
+/* ========================= header.css ========================= */
 
 #header {
   display: flex;
   justify-content: space-between;
   position: relative;
   align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
   padding: var(--space-md) var(--space-xl);
 
   background-color: var(--panel-bg);
@@ -90,20 +92,29 @@
   justify-content: center;
   gap: 5px;
 
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
   background: none;
-  border: none;
+  border: 1px solid transparent;
+  border-radius: var(--space-2xs);
   cursor: pointer;
 }
 
+/* .menu-toggle:hover {
+  border-color: var(--neon-green);
+} */
+
 .menu-toggle span {
-  width: 25px;
-  height: 2px;
+  width: 26px;
+  height: 3px;
   background: var(--neon-green);
+  border-radius: 999px;
   transition: var(--transition-fast);
 }
 
 .menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translateY(9px);
+  transform: rotate(45deg) translateY(11px);
 }
 
 .menu-toggle.active span:nth-child(2) {
@@ -111,5 +122,5 @@
 }
 
 .menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-9px);
+  transform: rotate(-45deg) translateY(-11px);
 }

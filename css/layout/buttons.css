@@ -1,12 +1,21 @@
+/* ========================= buttons.css ========================= */
+
 .btn {
+  display: inline-block;
   padding: var(--space-sm) var(--space-xl);
+  font-size: clamp(var(--text-base), 3vw, var(--text-xl));
+  font-family: inherit;
+  line-height: 1.6;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: var(--space-2xs);
+  border: 1px solid transparent;
   transition: var(--transition-normal);
+  cursor: pointer;
+
+  /* Default: green filled */
   background: var(--neon-green);
   color: var(--dark-bg);
-  border: 1px solid transparent;
-  border-radius: var(--space-2xs);
 }
 
 .btn:hover {
@@ -14,4 +23,17 @@
   color: var(--neon-green);
   border: var(--neon-green-border);
   box-shadow: var(--neon-green-shadow);
+}
+
+/* Outlined variant — cyan */
+.btn-outline-cyan {
+  background: var(--dark-bg);
+  color: var(--neon-cyan);
+  border: var(--neon-cyan-border);
+}
+
+.btn-outline-cyan:hover {
+  background: var(--neon-cyan);
+  color: var(--dark-bg);
+  box-shadow: var(--neon-cyan-shadow);
 }

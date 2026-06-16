@@ -1,15 +1,17 @@
+/* ========================= responsive.css ========================= */
+
 @media (max-width: 768px) {
   html {
     font-size: 14px;
   }
 
-  header,
-  footer {
-    padding: var(--space-md) var(--space-xl);
+  #header {
+    padding: var(--space-md);
   }
 
-  .home-stats {
-    flex-direction: column;
+  .header-left {
+    flex: 1;
+    min-width: 0;
   }
 
   .menu-toggle {
@@ -23,13 +25,13 @@
     right: 0;
 
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    padding: var(--space-md);
 
     background-color: var(--panel-bg);
     border-top: var(--neon-green-border);
     z-index: 1000;
 
-    /* hidden state */
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -41,9 +43,8 @@
       transform 0.3s ease;
   }
 
-  /* WHEN ACTIVE */
   .header-right.show {
-    max-height: 300px; /* enough for all links */
+    max-height: 500px;
     opacity: 1;
     transform: translateY(0);
   }
@@ -52,11 +53,62 @@
     width: 100%;
     justify-content: center;
     padding: var(--space-md);
+    border-radius: var(--space-2xs);
+  }
+
+  .nav-link + .nav-link {
+    margin-top: var(--space-sm);
+  }
+
+  .home-main-links {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .home-main-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-grid,
+  .tech-stack_list {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
 
 @media (min-width: 1200px) {
   html {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-header,
+  .education-header,
+  .language-header {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }

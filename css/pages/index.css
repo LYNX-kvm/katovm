@@ -1,3 +1,5 @@
+/* ========================= index.css ========================= */
+
 /* ========================= 6. HERO ========================= */
 
 .page-home .hero p {
@@ -38,71 +40,10 @@
   box-shadow: var(--neon-green-shadow);
 }
 
-/* ========================= 7. STATS ========================= */
+/* ========================= 9. TECH STACK ========================= */
 
-.home-stats {
-  display: flex;
-  gap: var(--space-lg);
-}
-
-/* Card */
-.stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  flex: 1;
-  max-width: 40rem;
-
-  padding: var(--space-lg);
-  gap: var(--space-sm);
-
-  text-align: center;
-
-  transition: var(--transition-normal);
-}
-
-/* Children */
-.stat h2 {
-  margin: 0;
-  text-transform: lowercase;
-}
-
-.stat p {
-  font-size: var(--space-md);
-  text-transform: uppercase;
-}
-
-/* Variants */
-
-.home-page .experience h2 {
+.tech-stack h2 {
   color: var(--neon-green);
-}
-.home-page .experience:hover {
-  box-shadow: var(--neon-green-shadow);
-  border: var(--neon-green-border);
-}
-.box.study {
-  border: var(--toned-cyan-border);
-}
-.study h2 {
-  color: var(--neon-cyan);
-}
-.study:hover {
-  border: var(--neon-cyan-border);
-  box-shadow: var(--neon-cyan-shadow);
-}
-
-.box.languages {
-  border: var(--toned-pink-border);
-}
-.languages h2 {
-  color: var(--neon-pink);
-}
-.languages:hover {
-  box-shadow: var(--neon-pink-shadow);
-  border: var(--neon-pink-border);
 }
 
 /* ========================= 9. TECH STACK ========================= */
@@ -143,6 +84,8 @@
   padding: var(--space-sm) var(--space-2xl);
   text-transform: uppercase;
   text-decoration: none;
+  background: var(--dark-bg);
+
   color: var(--neon-green);
   border: var(--neon-green-border);
   transition: var(--transition-normal);
