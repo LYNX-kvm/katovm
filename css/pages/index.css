@@ -46,12 +46,6 @@
   color: var(--neon-green);
 }
 
-/* ========================= 9. TECH STACK ========================= */
-
-.tech-stack h2 {
-  color: var(--neon-green);
-}
-
 .category {
   display: flex;
   align-items: center;

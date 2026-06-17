@@ -13,10 +13,7 @@
   max-width: none;
 }
 
-.terminal {
-  color: var(--neon-green);
-  margin-bottom: var(--space-lg);
-}
+/* Terminal styles are centralized in css/layout/terminal.css */
 
 .button-group {
   display: flex;
@@ -25,17 +22,7 @@
   margin-top: var(--space-xl);
 }
 
-.btn {
-  padding: 0.9rem 1.5rem;
-  text-decoration: none;
-  border: var(--neon-cyan-border);
-  color: var(--neon-cyan);
-  transition: var(--transition-normal);
-}
-
-.btn:hover {
-  box-shadow: var(--neon-cyan-shadow);
-}
+/* Use the global .btn styles in css/layout/buttons.css; only keep variants here */
 
 .btn-outline {
   border: var(--neon-green-border);
@@ -44,6 +31,29 @@
 
 .btn-outline:hover {
   box-shadow: var(--neon-green-shadow);
+}
+
+/* Page-specific responsive overrides moved here (previously duplicated in responsive.css) */
+@media (max-width: 768px) {
+  .experience-header,
+  .education-header,
+  .language-header {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* =========================
