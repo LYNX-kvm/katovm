@@ -1,6 +1,21 @@
 /* ========================= about.css ========================= */
 
 /* =========================
+   SHARED PILL STYLE
+   ========================= */
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: var(--neon-cyan-border);
+}
+
+/* =========================
    HERO
    ========================= */
 
@@ -13,16 +28,12 @@
   max-width: none;
 }
 
-/* Terminal styles are centralized in css/layout/terminal.css */
-
 .button-group {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
   margin-top: var(--space-xl);
 }
-
-/* Use the global .btn styles in css/layout/buttons.css; only keep variants here */
 
 .btn-outline {
   border: var(--neon-green-border);
@@ -33,7 +44,7 @@
   box-shadow: var(--neon-green-shadow);
 }
 
-/* Page-specific responsive overrides moved here (previously duplicated in responsive.css) */
+/* Responsive */
 @media (max-width: 768px) {
   .experience-header,
   .education-header,
@@ -57,10 +68,9 @@
 }
 
 /* =========================
-   EXPERIENCE SECTION
+   EXPERIENCE
    ========================= */
 
-/* Layout */
 .experience article {
   margin: var(--space-md) 0;
 }
@@ -69,12 +79,12 @@
   gap: var(--space-md);
   transition: var(--transition-normal);
 }
+
 .experience .box:hover {
   box-shadow: var(--neon-green-shadow);
   border: var(--neon-green-border);
 }
 
-/* Header */
 .experience-header {
   display: flex;
   justify-content: space-between;
@@ -88,7 +98,6 @@
   gap: var(--space-sm);
 }
 
-/* Titles */
 .experience h3 {
   text-transform: uppercase;
   margin: 0;
@@ -100,12 +109,10 @@
   font-size: var(--space-lg);
 }
 
-/* Description */
 .experience p {
   text-transform: capitalize;
 }
 
-/* Skills */
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -174,15 +181,6 @@
   margin-top: var(--space-sm);
 }
 
-.education-status {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 0.9rem;
-  border-radius: 999px;
-  font-size: var(--text-sm);
-  text-transform: uppercase;
-}
-
 .education-status.current {
   border: var(--neon-green-border);
   background-color: rgba(0, 255, 159, 0.08);
@@ -225,22 +223,16 @@
 
 .language-header span:first-child {
   font-weight: 700;
+  font-size: 2rem;
   text-transform: uppercase;
   color: var(--neon-green);
   letter-spacing: 0.04em;
 }
 
 .language-header span:last-child {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  border: var(--toned-cyan-border);
+  /* inherits .pill */
   background-color: rgba(0, 212, 255, 0.08);
   color: var(--neon-cyan);
-  text-transform: uppercase;
-  font-size: var(--text-base);
-  letter-spacing: 0.08em;
 }
 
 .progress-bar {

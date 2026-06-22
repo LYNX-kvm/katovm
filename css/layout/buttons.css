@@ -26,13 +26,13 @@
 }
 
 /* Outlined variant — cyan */
-.btn-outline-cyan {
+.btn-outline {
   background: var(--dark-bg);
   color: var(--neon-cyan);
   border: var(--neon-cyan-border);
 }
 
-.btn-outline-cyan:hover {
+.btn-outline:hover {
   background: var(--neon-cyan);
   color: var(--dark-bg);
   box-shadow: var(--neon-cyan-shadow);
