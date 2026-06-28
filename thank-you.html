@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Sent</title>
+    <link rel="icon" type="image/svg+xml" href="media/kvm-favicon.svg" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <style>
+      .thank-you-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 60vh;
+        text-align: center;
+        gap: var(--space-lg);
+      }
+
+      .thank-you-icon {
+        font-size: 3rem;
+        color: var(--neon-green);
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .thank-you-container h1 {
+        color: var(--neon-green);
+        margin-bottom: var(--space-md);
+      }
+
+      .thank-you-container p {
+        max-width: 500px;
+        color: var(--soft-blue);
+        line-height: 1.6;
+      }
+
+      .thank-you-links {
+        display: flex;
+        gap: var(--space-lg);
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: var(--space-xl);
+      }
+
+      .countdown {
+        color: var(--neon-cyan);
+        font-weight: bold;
+        margin-top: var(--space-lg);
+      }
+    </style>
+  </head>
+
+  <body class="page-thank-you">
+    <!-- Header placeholder -->
+    <header id="header"></header>
+
+    <!-- Main content -->
+    <main>
+      <div class="thank-you-container">
+        <div class="thank-you-icon">✓</div>
+        <h1>Message Sent Successfully!</h1>
+        <div class="title-underline"></div>
+        <p>
+          Thank you for reaching out. I've received your message and will get
+          back to you as soon as possible.
+        </p>
+        <p class="countdown">
+          Redirecting in <span id="countdown">5</span> seconds...
+        </p>
+        <div class="thank-you-links">
+          <a href="index.html" class="btn">Back to Home</a>
+          <a
+            href="contact.html"
+            class="btn btn-outline"
+            style="
+              background: var(--dark-bg);
+              color: var(--neon-cyan);
+              border: var(--neon-cyan-border);
+            "
+            >Send Another Message</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <footer id="footer"></footer>
+
+    <!-- JS file -->
+    <script src="js/main.js"></script>
+    <script>
+      let count = 5;
+      const countdownElement = document.getElementById("countdown");
+
+      const interval = setInterval(() => {
+        count--;
+        countdownElement.textContent = count;
+        if (count === 0) {
+          clearInterval(interval);
+          window.location.href = "index.html";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

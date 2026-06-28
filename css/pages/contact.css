@@ -27,7 +27,7 @@
 .contact-form label {
   display: block;
   color: var(--neon-green);
-  font-size: var(--text-base);
+  font-size: var(--text-lg);
   font-weight: bold;
   margin-top: var(--space-lg);
   margin-bottom: var(--space-xs);

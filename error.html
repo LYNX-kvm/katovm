@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submission Error</title>
+    <link rel="icon" type="image/svg+xml" href="media/kvm-favicon.svg" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <style>
+      .error-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 60vh;
+        text-align: center;
+        gap: var(--space-lg);
+      }
+
+      .error-icon {
+        font-size: 3rem;
+        color: var(--neon-pink);
+      }
+
+      .error-container h1 {
+        color: var(--neon-pink);
+        margin-bottom: var(--space-md);
+      }
+
+      .error-container p {
+        max-width: 500px;
+        color: var(--soft-blue);
+        line-height: 1.6;
+      }
+
+      .error-links {
+        display: flex;
+        gap: var(--space-lg);
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: var(--space-xl);
+      }
+    </style>
+  </head>
+
+  <body class="page-error">
+    <!-- Header placeholder -->
+    <header id="header"></header>
+
+    <!-- Main content -->
+    <main>
+      <div class="error-container">
+        <div class="error-icon">✕</div>
+        <h1>Oops! Something Went Wrong</h1>
+        <div class="title-underline"></div>
+        <p>
+          There was an issue submitting your message. Please try again or reach
+          out directly at
+          <a
+            href="mailto:kato.vanmulders07@gmail.com"
+            style="color: var(--neon-cyan); text-decoration: underline"
+            >kato.vanmulders07@gmail.com</a
+          >
+        </p>
+        <div class="error-links">
+          <a href="contact.html" class="btn">Back to Contact Form</a>
+          <a
+            href="index.html"
+            class="btn btn-outline"
+            style="
+              background: var(--dark-bg);
+              color: var(--neon-cyan);
+              border: var(--neon-cyan-border);
+            "
+            >Go Home</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer placeholder -->
+    <footer id="footer"></footer>
+
+    <!-- JS file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

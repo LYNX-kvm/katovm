@@ -1,11 +1,112 @@
+/* ========================= projects.css ========================= */
+
 .projectsContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.125rem;
+  gap: var(--space-xl);
 }
 
 @media (max-width: 700px) {
   .projectsContainer {
     grid-template-columns: 1fr;
   }
+}
+
+.project-card {
+  background-color: var(--box-bg);
+  border: var(--toned-green-border);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6) saturate(0.8);
+}
+
+.badge-live {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  padding: var(--space-2xs) var(--space-sm);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  color: var(--neon-cyan);
+  border: var(--toned-cyan-border);
+  border-radius: 4px;
+  background-color: var(--panel-bg);
+}
+
+.project-body {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-category {
+  color: var(--neon-cyan);
+  font-size: var(--text-sm);
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--space-sm);
+}
+
+.project-title {
+  color: var(--neon-green);
+  font-size: var(--text-lg);
+  margin: 0 0 var(--space-sm);
+}
+
+.project-desc {
+  color: var(--soft-blue);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  margin: 0 0 var(--space-md);
+}
+
+.tech-stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin: 0 0 var(--space-lg);
+  padding: 0;
+}
+
+.tech-stack li {
+  background-color: var(--panel-bg);
+  border: var(--toned-green-border);
+  border-radius: 4px;
+  color: var(--soft-blue);
+  font-size: var(--text-sm);
+  padding: var(--space-2xs) var(--space-sm);
+}
+
+.project-actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: auto;
+}
+
+.project-actions .btn,
+.project-actions .btn-outline {
+  flex: 1;
+  text-align: center;
+}
+
+.wannaseemegithub{
+  margin-top: var(--space-lg);
 }

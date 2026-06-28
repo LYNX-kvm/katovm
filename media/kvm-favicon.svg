@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0d1230"/>
+      <stop offset="100%" stop-color="#0a0e27"/>
+    </linearGradient>
+    <linearGradient id="g2text" x1="20" y1="40" x2="108" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#00ff9f"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="22" fill="url(#g2bg)"/>
+  <line x1="0" y1="96" x2="32" y2="128" stroke="#00d4ff" stroke-width="1.5" opacity="0.3"/>
+  <line x1="96" y1="0" x2="128" y2="32" stroke="#00ff9f" stroke-width="1.5" opacity="0.3"/>
+  <text
+    x="64" y="82"
+    font-family="'Share Tech Mono', monospace"
+    font-size="44" font-weight="700"
+    fill="url(#g2text)"
+    text-anchor="middle" dominant-baseline="auto"
+    filter="url(#glow2)"
+  >KVM</text>
+  <line x1="24" y1="92" x2="104" y2="92" stroke="url(#g2text)" stroke-width="2.5"/>
+</svg>
