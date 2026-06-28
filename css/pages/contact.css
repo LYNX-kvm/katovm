@@ -1,6 +1,5 @@
 /* ========================= contact.css ========================= */
 
-
 .subtitle {
   margin: 0 0 var(--space-2xl);
 }
@@ -28,7 +27,7 @@
 .contact-form label {
   display: block;
   color: var(--neon-green);
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: bold;
   margin-top: var(--space-lg);
   margin-bottom: var(--space-xs);
@@ -45,7 +44,9 @@
   font-size: var(--text-base);
   padding: var(--space-sm) var(--space-md);
   box-sizing: border-box;
-  transition: border var(--transition-fast), box-shadow var(--transition-fast);
+  transition:
+    border var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .contact-form input::placeholder,
@@ -63,47 +64,29 @@
 
 .contact-form textarea {
   resize: vertical;
-  min-height: 140px;
+  min-height: 105px;
   font-family: inherit;
 }
 
 .contact-form button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-xs);
   margin-top: var(--space-xl);
-  background-color: var(--neon-green);
-  border: none;
-  border-radius: 4px;
-  color: var(--dark-bg);
-  font-family: inherit;
-  font-size: var(--text-base);
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  padding: var(--space-md);
-  cursor: pointer;
-  box-shadow: var(--neon-green-shadow);
-  transition: box-shadow var(--transition-normal), transform var(--transition-fast);
 }
 
-.contact-form button:hover {
-  box-shadow: 0 0 25px 8px var(--low-opacity-green);
-  transform: translateY(-1px);
-}
+
 
 /* === Sidebar === */
 
 .contact-sidebar {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
+  gap: var(--space-md);
 }
 
 .card {
   background-color: var(--box-bg);
   border-radius: 8px;
   padding: var(--space-lg) var(--space-xl);
+  margin: 0;
 }
 
 .card h2 {
@@ -115,7 +98,7 @@
 }
 
 .card .label {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   font-weight: bold;
   margin: 0 0 var(--space-2xs);
   letter-spacing: 0.05em;
@@ -157,7 +140,7 @@
 .direct-contact .icon-row svg {
   color: var(--neon-cyan);
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 1.5px;
 }
 
 /* Social Networks card */
@@ -218,8 +201,8 @@
 }
 
 .availability .dot {
-  width: 10px;
-  height: 10px;
+  width: 7.5px;
+  height: 7.5px;
   border-radius: 50%;
   background-color: var(--neon-green);
   box-shadow: var(--neon-green-shadow);
@@ -233,8 +216,13 @@
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
 }
 
 /* === Responsive === */
@@ -247,7 +235,7 @@
 
 @media (max-width: 480px) {
   .page-contact h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .page-contact main {

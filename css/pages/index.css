@@ -3,7 +3,11 @@
 /* ========================= 6. HERO ========================= */
 
 .page-home .hero p {
-  max-width: 800px;
+  max-width: 600px;
+}
+
+.page-home .hero + .tech-stack {
+  margin-top: var(--space-lg);
 }
 
 /* BUTTONS */

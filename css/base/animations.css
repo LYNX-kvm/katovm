@@ -12,7 +12,3 @@
     opacity: 1;
   }
 }
-
-.pulse {
-  animation: var(--pulse);
-}
