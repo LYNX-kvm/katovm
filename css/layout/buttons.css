@@ -1,7 +1,10 @@
 /* ========================= buttons.css ========================= */
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
   padding: var(--space-sm) var(--space-xl);
   font-size: clamp(var(--text-base), 3vw, var(--text-xl));
   font-family: inherit;

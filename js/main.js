@@ -1,27 +1,25 @@
 // Load header
-fetch('../components/header.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('header').innerHTML = data;
+// Load header
+fetch("/components/header.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("header").innerHTML = data;
 
-    const navLinks = document.querySelectorAll('#header nav a');
-    const currentPath = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll("#header nav a");
 
-    navLinks.forEach(link => link.classList.remove('active'));
+    const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
 
-    navLinks.forEach(link => {
-      const linkPath = link.getAttribute('href').split('/').pop();
-      if (linkPath === currentPath) {
-        link.classList.add('active');
-      }
+    navLinks.forEach((link) => {
+      const linkPath = link.getAttribute("href").replace(/\/$/, "") || "/";
+
+      link.classList.toggle("active", linkPath === currentPath);
     });
   });
-
 // Load footer
-fetch('../components/footer.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('footer').innerHTML = data;
+fetch("../components/footer.html")
+  .then((res) => res.text())
+  .then((data) => {
+    document.getElementById("footer").innerHTML = data;
   });
 
 function toggleMenu() {
