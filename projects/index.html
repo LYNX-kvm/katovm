@@ -24,7 +24,18 @@
       <section class="hero">
         <div class="terminal-wrap">
           <p class="terminal">&gt; ls projects/</p>
-          <p class="terminal">&gt; Found 5 projects</p>
+          <p class="terminal" id="projectCount">&gt; Found 5 projects</p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="btn active" data-filter="all">All</button>
+          <button class="btn btn-outline" data-filter="HTML">HTML</button>
+          <button class="btn btn-outline" data-filter="CSS">CSS</button>
+          <button class="btn btn-outline" data-filter="JavaScript">
+            JavaScript
+          </button>
+          <button class="btn btn-outline" data-filter="API">API</button>
+          <button class="btn btn-outline" data-filter="PowerBI">PowerBI</button>
         </div>
 
         <div class="projectsContainer">
@@ -34,9 +45,7 @@
               <span class="badge-live">COMPLETED</span>
             </div>
             <div class="project-body">
-              <p class="project-category">
-                [ Research paper + data analysis ]
-              </p>
+              <p class="project-category">[ Research paper + data analysis ]</p>
               <h2 class="project-title">COVID-19 Impact on Belgian SMEs</h2>
               <p class="project-desc">
                 Data analysis of COVID-19's impact on Belgian SMEs Research
@@ -222,5 +231,6 @@
 
     <!-- JS file -->
     <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
   </body>
 </html>
