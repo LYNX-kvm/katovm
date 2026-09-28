@@ -1,10 +1,6 @@
 /* ========================= responsive.css ========================= */
 
 @media (max-width: 768px) {
-  html {
-    font-size: 10.5px;
-  }
-
   #header {
     padding: var(--space-md);
   }
@@ -82,11 +78,5 @@
   .btn {
     width: 100%;
     text-align: center;
-  }
-}
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 18px;
   }
 }

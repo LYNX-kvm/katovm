@@ -41,7 +41,7 @@
   border-radius: 4px;
   color: var(--soft-blue);
   font-family: inherit;
-  font-size: var(--text-base);
+  font-size: max(16px, var(--text-base));
   padding: var(--space-sm) var(--space-md);
   box-sizing: border-box;
   transition:
@@ -172,7 +172,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: var(--space-xl)
+  gap: var(--space-xl);
 }
 /* Availability card */
 

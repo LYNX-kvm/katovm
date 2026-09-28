@@ -1,30 +1,35 @@
 /* ========================= typography.css ========================= */
 
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 h1,
 h2 {
   text-transform: uppercase;
 }
 
 h1 {
-  font-size: clamp(1.125rem, 7.5vw, 4.5rem);
+  font-size: clamp(1.75rem, 1.25rem + 2.5vw, 3rem);
   font-weight: 700;
   color: var(--neon-green);
 }
 
 h2 {
-  font-size: clamp(0.9rem, 3vw, 1.875rem);
+  font-size: clamp(1.125rem, 1rem + 0.8vw, 1.5rem);
   color: var(--neon-cyan);
 }
 
 h3,
 h4 {
-  font-size: clamp(0.75rem, 2.4vw, 1.5rem);
+  font-size: clamp(1rem, 0.95rem + 0.4vw, 1.25rem);
   color: var(--neon-cyan);
 }
 
 /* Default body text */
 p {
-  font-size: clamp(var(--text-base), 2.25vw, var(--text-xl));
+  font-size: var(--text-md);
   line-height: 1.6;
   color: var(--soft-blue);
 }
@@ -40,6 +45,7 @@ p {
   background: var(--low-opacity-pink);
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: crosshair;
 }

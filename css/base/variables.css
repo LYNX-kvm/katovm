@@ -65,11 +65,12 @@
 
   /* === Font Sizes === */
   /* Use these for font-size; use --space-* only for margin/padding/gap */
-  --text-sm: 0.65625rem;
-  --text-base: 0.75rem;
-  --text-md: 0.84375rem;
-  --text-lg: 0.9375rem;
-  --text-xl: 1.125rem;
+  /* === Font Sizes (fluid, ~mobile → desktop) === */
+  --text-sm: clamp(0.75rem, 0.73rem + 0.1vw, 0.8125rem); /* 12–13px */
+  --text-base: clamp(0.875rem, 0.85rem + 0.2vw, 0.9375rem); /* 14–15px */
+  --text-md: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem); /* 15–16px */
+  --text-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem); /* 16–18px */
+  --text-xl: clamp(1.125rem, 1rem + 0.5vw, 1.25rem); /* 18–20px */
 
   /* === Transitions === */
   --transition-fast: 0.2s ease;
