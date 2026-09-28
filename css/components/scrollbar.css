@@ -1,0 +1,99 @@
+/* =========================================================
+NEON TERMINAL PAGE SCROLLBAR
+========================================================= */
+
+/* Firefox */
+html {
+scrollbar-width: thin;
+scrollbar-color: var(--neon-green) var(--dark-bg);
+}
+
+/* =========================================================
+Chromium / Safari / Edge
+========================================================= */
+
+/* Scrollbar */
+html::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+
+/* ---------------------------------------------------------
+Track
+--------------------------------------------------------- */
+
+html::-webkit-scrollbar-track {
+background: linear-gradient(
+90deg,
+var(--dark-bg),
+var(--box-bg),
+var(--dark-bg)
+);
+
+border-left: 1px solid var(--toned-green);
+}
+
+/* ---------------------------------------------------------
+Thumb
+--------------------------------------------------------- */
+
+html::-webkit-scrollbar-thumb {
+background: linear-gradient(
+180deg,
+var(--neon-green) 0%,
+var(--neutral-green) 45%,
+var(--neon-green) 100%
+);
+
+border: 2px solid var(--dark-bg);
+border-radius: 2px;
+
+/* Neon glow */
+box-shadow:
+0 0 4px var(--neon-green),
+0 0 10px var(--low-opacity-green),
+inset 0 0 4px rgb(255 255 255 / 25%);
+
+transition:
+background var(--transition-fast),
+box-shadow var(--transition-fast);
+
+
+}
+
+/* ---------------------------------------------------------
+Hover
+--------------------------------------------------------- */
+
+html::-webkit-scrollbar-thumb:hover {
+background: linear-gradient(
+180deg,
+var(--neon-cyan),
+var(--neon-green),
+var(--neon-cyan)
+);
+
+box-shadow:
+0 0 5px var(--neon-cyan),
+0 0 12px var(--low-opacity-cyan),
+0 0 20px var(--low-opacity-green),
+inset 0 0 5px rgb(255 255 255 / 35%);
+}
+
+/* ---------------------------------------------------------
+Track buttons
+--------------------------------------------------------- */
+
+html::-webkit-scrollbar-button {
+width: 0;
+height: 0;
+display: none;
+}
+
+/* ---------------------------------------------------------
+Corner where scrollbars meet
+--------------------------------------------------------- */
+
+html::-webkit-scrollbar-corner {
+background: var(--dark-bg);
+}

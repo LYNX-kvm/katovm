@@ -72,8 +72,6 @@
   margin-top: var(--space-xl);
 }
 
-
-
 /* === Sidebar === */
 
 .contact-sidebar {
@@ -147,25 +145,15 @@
 
 .social-networks {
   border: var(--toned-pink-border);
+
+  gap: var(--space-sm);
 }
 
 .social-networks h2 {
   color: var(--neon-pink);
 }
 
-.social-networks ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-}
-
 .social-networks a {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
   color: var(--neon-green);
   text-decoration: none;
   font-size: var(--text-base);
@@ -176,10 +164,16 @@
   color: var(--neon-cyan);
 }
 
-.social-networks a svg {
-  flex-shrink: 0;
+.social-networks a img {
+  height: var(--space-2xl);
 }
 
+.social-networks .links {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--space-xl)
+}
 /* Availability card */
 
 .availability {

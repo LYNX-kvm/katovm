@@ -28,3 +28,18 @@ p {
   line-height: 1.6;
   color: var(--soft-blue);
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--neon-cyan);
+  background: var(--low-opacity-pink);
+}
+
+::selection {
+  color: var(--neon-cyan);
+  background: var(--low-opacity-pink);
+}
+
+a:hover, button:hover {
+  cursor: crosshair;
+}
