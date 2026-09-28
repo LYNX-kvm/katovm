@@ -44,28 +44,7 @@
   box-shadow: var(--neon-green-shadow);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .experience-header,
-  .education-header,
-  .language-header {
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .button-group {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-}
 
 /* =========================
    EXPERIENCE
@@ -113,9 +92,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-md);
+  list-style: none; /* new */
+  padding: 0;       /* new */
+  margin: 0;        /* new */
 }
 
 .skill-list span {
+  display: block;   /* new: keeps padding/border acting like before */
   padding: var(--space-md);
   font-size: var(--space-lg);
   color: var(--neon-pink);
@@ -123,7 +106,6 @@
   transition: var(--transition-normal);
   text-transform: capitalize;
 }
-
 .skill-list span:hover {
   box-shadow: var(--neon-pink-shadow);
   border: var(--neon-pink-border);
@@ -286,4 +268,26 @@ main section h2 {
   text-transform: uppercase;
   margin-bottom: var(--space-xl);
   letter-spacing: 1.5px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-header,
+  .education-header,
+  .language-header {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }

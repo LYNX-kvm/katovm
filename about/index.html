@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me page</title>
+    <title>About – Kato Van Mulders</title>
+    <meta
+      name="description"
+      content="Applied Computer Science student at HOGENT specializing in Full Stack Development. Experience in IT support, Windows 11 deployment and digital archiving. Open to student jobs and internships." />
     <link rel="icon" type="image/svg+xml" href="/media/kvm-favicon.svg" />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
@@ -20,28 +23,40 @@
       <!-- ABOUT ME -->
       <section class="hero">
         <div class="box">
-          <p class="terminal about">&gt; cat profile.txt</p>
+          <p class="terminal about" aria-hidden="true">&gt; cat profile.txt</p>
 
           <p>
-            Motivated Applied Computer Science student with experience in IT
-            support, customer service, and logistics. Familiar with Windows
-            installations, software configuration, and programming in Java,
-            Python, and web technologies.
+            Applied Computer Science student at HOGENT, specializing in Full
+            Stack Development. I like building practical tools that solve real
+            problems, like the PDF tool I made for a municipal archive team. My
+            background covers IT support and Windows 11 deployment, digital
+            archiving and logistics, so I'm used to working accurately,
+            independently and with sensitive information.
           </p>
 
           <p>
-            I'm curious, structured, and strong in problem-solving. I enjoy
-            learning new technologies and applying them to real-world
-            challenges. Currently in my first year at HOGENT, building a strong
-            foundation in computer science.
+            I work with Java, Python and web technologies (HTML, CSS and
+            JavaScript), and I learn best by building things. I'm looking for a
+            student job or internship where I can grow as a developer and
+            contribute to a real team.
           </p>
 
           <div class="button-group">
-            <a href="resume/EN_IT.pdf" target="_blank" class="btn"
-              >View Resume (EN)</a
+            <a
+              href="resume/EN_IT.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+              >View Resume (EN, PDF)</a
             >
-            <a href="resume/NL_IT.pdf" target="_blank" class="btn"
-              >Bekijk CV (NL)</a
+            <a
+              href="resume/NL_IT.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              lang="nl"
+              hreflang="nl"
+              class="btn"
+              >Bekijk CV (NL, PDF)</a
             >
           </div>
         </div>
@@ -54,13 +69,17 @@
           <header class="education-header">
             <div class="degree-title-group">
               <h3>Applied Computer Science</h3>
-              <p class="school">HOGENT, Aalst Campus</p>
+              <p class="school">
+                HOGENT, Aalst Campus · Specialization: Full Stack Development
+              </p>
             </div>
 
             <span class="education-status current pill">Current</span>
           </header>
 
-          <p class="school-meta"><time datetime="2025">2025</time> – Present</p>
+          <p class="school-meta">
+            <time datetime="2025-09">2025</time> – Present
+          </p>
         </article>
 
         <article class="box">
@@ -99,23 +118,38 @@
       <section class="experience">
         <h2>Experience</h2>
 
-        <!-- <article class="box">
+        <article class="box">
           <header class="experience-header">
             <div class="job-title-group">
-              <h3>Student Admin</h3>
-                voltijds administratief medewerker bij de dienst ruimtelijke ordening 
-
+              <h3>Student Admin &amp; Digital Archiving</h3>
               <p class="company">Gemeente Lebbeke</p>
             </div>
-
             <p class="job-meta">
-              <time datetime="2026-08">August 2026</time> -
+              <time datetime="2026-08">August 2026</time> –
               <time datetime="2026-09">September 2026</time>
             </p>
           </header>
-          <p>Coming Up Soon</p>
-          <div class="skill-list"></div>
-        </article> -->
+          <p>
+            Digitized and reorganized the municipality's physical archive of
+            building permits and land records, some dating back to the 1890s.
+            Checked files against the existing numbering system to find gaps,
+            then scanned and filed them. Tracked progress in an Excel inventory
+            built with formulas, and redacted personal data on documents before
+            release.
+          </p>
+          <p>
+            Worked independently from a task list. Built a browser-based PDF
+            tool for merging scans and removing blank pages, and handed it over
+            with documentation. Also helped colleagues with small IT issues.
+          </p>
+          <ul class="skill-list">
+            <li><span>Excel (formulas &amp; validation)</span></li>
+            <li><span>Digital archiving</span></li>
+            <li><span>Confidentiality (GDPR)</span></li>
+            <li><span>JavaScript</span></li>
+            <li><span>Independent planning</span></li>
+          </ul>
+        </article>
 
         <article class="box">
           <header class="experience-header">
@@ -130,15 +164,30 @@
             </p>
           </header>
           <p>
-            Supported employees with IT issues, installed and configured
-            software, and provided basic helpdesk services and troubleshooting.
+            Carried out the Windows 10 to Windows 11 upgrade of municipal
+            laptops as the only student in a four-person IT team. Upgraded about
+            five laptops a day: imaged the drive, enabled BitLocker, installed
+            Windows 11 from USB, ran BIOS diagnostics, updated the device record
+            in Active Directory, configured domain, name and network settings,
+            and rolled out software with PDQ Deploy and Inventory.
           </p>
-          <div class="skill-list">
-            <span>Windows 10/11</span>
-            <span>Helpdesk Support</span>
-            <span>Software Installation</span>
-            <span>Troubleshooting</span>
-          </div>
+          <p>
+            Handed over new and upgraded laptops in 2–3 in-person appointments a
+            day for staff from the town hall, library, schools, daycare and
+            retirement home, explaining in plain language how to avoid common
+            issues. Also gave first-line support by phone, on site and remotely
+            (TightVNC) for printers, Outlook, licensing and hardware faults.
+            Tracked the rollout in Excel and documented procedures and
+            diagnostics in OneNote.
+          </p>
+          <ul class="skill-list">
+            <li><span>Windows 11 deployment</span></li>
+            <li><span>Active Directory</span></li>
+            <li><span>BitLocker &amp; disk imaging</span></li>
+            <li><span>PDQ Deploy &amp; Inventory</span></li>
+            <li><span>Remote support (TightVNC)</span></li>
+            <li><span>Documentation</span></li>
+          </ul>
         </article>
 
         <article class="box">
@@ -153,15 +202,14 @@
             </p>
           </header>
           <p>
-            Order picking and warehouse operations. Worked accurately and
-            efficiently under time pressure.
+            Picked orders and supported warehouse operations, working quickly
+            and accurately under time pressure.
           </p>
-          <div class="skill-list">
-            <span>Warehouse Operations</span>
-            <span>Time Management</span>
-            <span>Accuracy</span>
-            <span>Efficiency</span>
-          </div>
+          <ul class="skill-list">
+            <li><span>Order picking</span></li>
+            <li><span>Time management</span></li>
+            <li><span>Accuracy</span></li>
+          </ul>
         </article>
       </section>
 
@@ -194,7 +242,17 @@
             <span class="pill">Basic</span>
           </div>
           <div class="progress-bar">
-            <div class="progress" style="width: 30%"></div>
+            <div class="progress" style="width: 35%"></div>
+          </div>
+        </div>
+
+        <div class="language box">
+          <div class="language-header">
+            <span>Japanese</span>
+            <span class="pill">Beginner - Learning</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 15%"></div>
           </div>
         </div>
       </section>
@@ -206,48 +264,49 @@
           <article class="box">
             <h3>Programming</h3>
 
-            <div class="skill-list">
-              <span>Java (OOP)</span>
-              <span>Python</span>
-              <span>JavaScript</span>
-              <span>HTML & CSS</span>
-            </div>
+            <ul class="skill-list">
+              <li><span>Java (OOP)</span></li>
+              <li><span>Python</span></li>
+              <li><span>JavaScript</span></li>
+              <li><span>HTML &amp; CSS</span></li>
+            </ul>
           </article>
 
           <article class="box">
-            <h3>IT & Support</h3>
+            <h3>IT &amp; Support</h3>
 
-            <div class="skill-list">
-              <span>Windows 10/11</span>
-              <span>Helpdesk Support</span>
-              <span>Remote Support</span>
-              <span>Software Installation</span>
-              <span>Troubleshooting</span>
-            </div>
+            <ul class="skill-list">
+              <li><span>Windows 10/11 deployment</span></li>
+              <li><span>Active Directory</span></li>
+              <li><span>BitLocker &amp; disk imaging</span></li>
+              <li><span>PDQ Deploy &amp; Inventory</span></li>
+              <li><span>Remote support (TightVNC)</span></li>
+              <li><span>Helpdesk support</span></li>
+            </ul>
           </article>
 
           <article class="box">
-            <h3>Data & Databases</h3>
+            <h3>Data &amp; Databases</h3>
 
-            <div class="skill-list">
-              <span>SQL</span>
-              <span>Database Design</span>
-              <span>Power BI</span>
-              <span>Data Visualization</span>
-            </div>
+            <ul class="skill-list">
+              <li><span>SQL</span></li>
+              <li><span>Database design</span></li>
+              <li><span>Excel (formulas &amp; validation)</span></li>
+              <li><span>Power BI</span></li>
+              <li><span>Data visualization</span></li>
+            </ul>
           </article>
 
           <article class="box">
-            <h3>Soft Skills</h3>
+            <h3>Working Style</h3>
 
-            <div class="skill-list">
-              <span>Independent</span>
-              <span>Structured</span>
-              <span>Quick Learner</span>
-              <span>Problem Solver</span>
-              <span>Leadership</span>
-              <span>Communication</span>
-            </div>
+            <ul class="skill-list">
+              <li><span>Independent</span></li>
+              <li><span>Accurate</span></li>
+              <li><span>Structured</span></li>
+              <li><span>Problem solving</span></li>
+              <li><span>Communication</span></li>
+            </ul>
           </article>
         </div>
       </section>
