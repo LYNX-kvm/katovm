@@ -1,18 +1,19 @@
-@import url("./components/footer.css");
-@import url("./components/header.css");
-@import url("./components/scrollbar.css");
-
 @import url("./base/variables.css");
-@import url("./base/typography.css");
 @import url("./base/reset.css");
+@import url("./base/typography.css");
 @import url("./base/animations.css");
+
+@import url("./layout/layout.css");
+@import url("./layout/buttons.css");
+@import url("./layout/terminal.css");
+
+@import url("./components/header.css");
+@import url("./components/footer.css");
+@import url("./components/scrollbar.css");
 
 @import url("./pages/index.css");
 @import url("./pages/about.css");
 @import url("./pages/projects.css");
 @import url("./pages/contact.css");
 
-@import url("./layout/layout.css");
-@import url("./layout/terminal.css");
 @import url("./layout/responsive.css");
-@import url("./layout/buttons.css");
